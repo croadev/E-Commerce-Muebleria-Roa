@@ -1,0 +1,39 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .producto img {
+    height: 445px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.categoria img {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.categoria img:hover {
+  transform: scale(1.2);
+}
