@@ -61,7 +61,105 @@
       </div>
     </div>
     <main class="container-xl py-4">
-      <h2 class="text-center my-4 fw-bold fs-1">Formulario de Contacto</h2>
+      <h2 class="text-center my-4 fw-bold fs-1 pb-5">Formulario de Contacto</h2>
+
+      <div class="row justify-content-center">
+        <form class="col-md-8">
+          <fieldset>
+            <legend class="bg-primary text-center text-white fs-4 fw-bold">
+              Tus Datos
+            </legend>
+            <div class="mb-3">
+              <label class="form-label" for="nombre">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Tu Nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="asunto">Asunto:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="asunto"
+                placeholder="Tu Asunto"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">E-Mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Tu E-Mail"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="tel">Telefono:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                placeholder="Tu Telefono"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="tel">Mensaje:</label>
+              <textarea class="form-control" rows="10"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="bg-primary text-center text-white fs-4 fw-bold">
+              País
+            </legend>
+            <div class="mb-3">
+              <label class="form-label" for="pais">País:</label>
+              <select class="form-control" id="pais">
+                <option value="">--Seleccione--</option>
+                <option value="MX">Mexico</option>
+                <option value="PR">Peru</option>
+                <option value="CO">Colombia</option>
+                <option value="AR">Argentina</option>
+                <option value="ES">España</option>
+                <option value="CL">Chile</option>
+                <option value="VE">Venezuela</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="bg-primary text-center text-white fs-4 fw-bold">
+              Infomación Extra
+            </legend>
+            <div class="mb-3">
+              <label class="form-label" for="cliente">Cliente</label>
+              <input
+                name="tipo"
+                type="radio"
+                class="form-check-input"
+                id="cliente"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="proovedor">Proovedor</label>
+              <input
+                name="tipo"
+                type="radio"
+                class="form-check-input"
+                id="proovedor"
+              />
+            </div>
+          </fieldset>
+          <div class="d-grid d-md-flex">
+            <input
+              class="btn btn-success fs-5 px-5"
+              type="submit"
+              value="Enviar Formulario"
+            />
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="mt-3 pt-3 border-top">
       <div class="container-xl mt-3">
